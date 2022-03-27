@@ -1,14 +1,16 @@
 body{
   margin: 0;
+  
 }
 
 .top-pane {
-  background-color: hsl(225, 6%, 25%);
+ 
 }
 
 .pane{
   height: 50vh;
   display: flex;
+  background-color: #404040;
 }
 
 .editor-container{
@@ -17,39 +19,42 @@ body{
   display: flex;
   flex-direction: column;
   padding: .5rem;
-  background-color: hsl(225, 6%, 25%);
+  background: #babcb9;
 }
 
 .editor-title{
   display: flex;
   justify-content: space-between;
-  background-color: hsl(225, 6%, 13%);
-  color: white;
+  background-color: hsl(220, 43%, 1%);
+  color: rgb(244, 245, 247);
   padding: .5rem .5rem .5rem 1rem;
 }
 
 .CodeMirror{
-  height: 100% !important
+  height: 100% !important;
 }
 
 .code-mirror-wrapper{
   flex-grow: 1;
   overflow: hidden;
+  
 }
 
 .editor-container.collapsed{
   flex-grow: 0;
+  
 }
 
 .editor-container.collapsed .CodeMirror-scroll{
   position: absolute;
   overflow: hidden !important;
+  
 }
 
 .btn-styles{
   margin-left: .5rem;
   background: none;
   border: none;
-  color: white;
+  color: rgb(252, 252, 252);
   cursor: pointer;
 }
